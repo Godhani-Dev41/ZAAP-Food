@@ -1,0 +1,12 @@
+<div class="home-header px-2 pt-1">
+  <span class="header-text">Welcome, On Table: {{ tableNumber }} </span>
+  <div class="plate-count-avatar d-flex align-items-center justify-content-center position-relative shadow-sm"
+    (click)="navigateToProductCart()">
+    <i class="fa fa-cutlery" aria-hidden="true"></i>
+    <span class="plate-text">My Plate</span>
+
+    <div class="plate-count d-flex justify-content-center align-items-center position-absolute">
+      <span> {{ plateCount }} </span>
+    </div>
+  </div>
+</div>

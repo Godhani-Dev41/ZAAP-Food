@@ -1,0 +1,74 @@
+@import "../../scss/variable.scss";
+
+.home {
+  .home-header-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 120;
+    background-color: white;
+  }
+  .nav-options {
+    padding-top: $home-header-height;
+  }
+  .nav {
+    .categories-link {
+      a {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .see-all-link {
+      a {
+        font-size: 14px;
+        color: $dark-indigo !important;
+      }
+    }
+  }
+
+  .menu-label {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .btn-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $dark-gray;
+    border-color: $dark-gray;
+    color: $yellow-color;
+    bottom: 4.5rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+
+  .food-items {
+    background-color: $light-gray;
+    ::ng-deep {
+      .food-item {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+::ng-deep {
+  // .modal-backdrop {
+  //   top: 70px;
+  //   height: calc(100vh - 123px);
+  // }
+
+  .modal-dialog {
+    justify-content: center;
+    .modal-content {
+      width: fit-content;
+    }
+  }
+}
+
+.list-group-item {
+  font-size: 18px;
+}

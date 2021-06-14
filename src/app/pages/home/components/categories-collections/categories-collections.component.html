@@ -1,0 +1,25 @@
+<div>
+  <div class="header-block">
+    <div class="header d-flex align-items-center justify-content-center pt-2">
+      <i class="fa fa-arrow-left position-absolute" (click)="navigateToBack()"></i>
+      <input type="email" class="px-4 py-3 form-control search-input border" id="additions"
+        placeholder="&#xF002; Search" (keyup)="searchProduct($event)">
+    </div>
+    <div class="pt-3 pb-1 text-center">
+      <span class="zone-name"> {{ 'Collections' }} </span>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-2">
+    <div class="categories row">
+      <div class="category col-4 col-sm-3 mb-3" *ngFor="let category of categoriesCollection$ | async"
+        (click)="navigateToProcudtByCategoryZone(category?.zoneCode)">
+        <img class="category-image w-100 h-100 rounded position-relative" [src]="category.categoryImage">
+        <div class="image-shadow position-absolute rounded h-100"></div>
+        <div class="category-name-block d-flex justify-content-center position-absolute">
+          <span class="category-name text-light"> {{ category?.categoryName }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

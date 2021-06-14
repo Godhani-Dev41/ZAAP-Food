@@ -1,0 +1,80 @@
+<div class="">
+    <div class="title-header position-fixed w-100">
+        <app-top-nav-bar [title]="'Item(s) On My Plate'"></app-top-nav-bar>
+    </div>
+
+    <div *ngIf="!(products && products.length)"
+        class="empty-cart px-2 pt-4 d-flex flex-column align-items-center justify-content-center">
+        <img class="cart-image" src="../../../../../assets/empty-cart.svg">
+        <span class="message d-block py-3 text-center">There is nothing to show here, yet. Place an order, please.
+            Thanks.</span>
+    </div>
+
+    <div *ngIf="products && products.length" class="products-cart px-2 pb-2">
+        <div class="py-2">
+            <span class="table-number">Table: {{ tableNumber }} </span>
+            &nbsp;
+            ,
+            &nbsp;
+            <span class="date-time"> {{ date | date: "MMMM-dd-yyyy"}} &nbsp; {{ date |date: "hh:MM a" | lowercase }}
+            </span>
+        </div>
+
+        <div class="products">
+            <div class="product rounded shadow-sm bg-white mb-2 px-2 py-3 d-flex position-relative"
+                *ngFor="let product of cartProducts$ | async">
+                <img class="product-image rounded" [src]="product.itemImage">
+                <div class="product-detail w-100 pl-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column">
+                            <span class="product-name d-block"> {{ product.itemName }} </span>
+                            <span class="about-text d-block">
+                                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                About dish
+                            </span>
+                        </div>
+                        <i class="fa fa-times-circle text-danger close-icon position-absolute"
+                            (click)="removeItem(product.cartId)" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-badges d-flex align-items-center justify-content-between pt-1">
+                        <span class="px-3 py-1 d-block badge badge-pill product-price">
+                            $ {{ product.itemPrice }}
+                        </span>
+                        <div class="item-count-badges d-flex align-items-center">
+                            <span class="px-3 py-1 badge badge-pill"
+                                (click)="updateItemCount(product,-1)">
+                                <i class="fa fa-minus cursor-pointer"></i>
+                            </span>
+                            <span class="count px-3">{{ product.itemCount }}</span>
+                            <span class="px-3 py-1 badge badge-pill" (click)="updateItemCount(product,1)">
+                                <i class="fa fa-plus cursor-pointer"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="text-muted about-text" *ngIf="product.ingredientsIncluded">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        {{ product | extraIngredientString }}
+                    </div>
+
+                    <div>
+                        <input type="text" [(ngModel)]="product.specialRequest"
+                            class="px-0 form-control additions-input border-top-0 border-right-0 border-left-0 border-bottom"
+                            id="{{product.cartId + '-specialRequest'}}" placeholder="Add Special Request">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-buttons w-100 position-absolute d-flex align-items-center
+        justify-content-around pb-3">
+            <span class="btn px-4 py-2 badge badge-pill" (click)="navigateToHome()">
+                <i class="fa fa-plus cursor-pointer"></i>
+                More Items
+            </span>
+            <span class="px-4 py-2 badge badge-pill btn" (click)="onPlaceOrder()">
+                Place Order (${{ cartMeta.totalPrice }})
+            </span>
+        </div>
+    </div>
+</div>

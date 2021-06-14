@@ -1,0 +1,76 @@
+@import "../../scss/variable.scss";
+
+$place-order-page-header-height: 65px;
+// $place-order-page-summary-height: 70px;
+
+.fixed-header {
+    z-index: 50;
+    .header-card {
+        border: none;
+        position: relative;
+        bottom: 6px;
+        height: $place-order-page-header-height;
+        font-size: 12px;
+        .header-icon {
+            z-index: 50;
+            font-size: 24px;
+            border: 1px solid black;
+            padding: 6px 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .circle-icon {
+            font-size: 28px;
+            padding: 3px 6px;
+        }
+        .row {
+            .col {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.progress-bar-wrapper {
+    position: relative;
+    bottom: 2rem;
+    .progress-bar-custom {
+        background-color: #d8d8d8 !important;
+    }
+    .progress {
+        height: 5px;
+        font-size: 0 !important;
+    }
+}
+
+.order-details {
+    padding-top: calc(#{$top-navbar-height} + #{$place-order-page-header-height} + 10px);
+    background-color: $light-orange;
+    .card-wrapper {
+        font-size: 12px;
+        .cart-details {
+            border-left: 8px solid grey !important;
+
+            div {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.summary {
+    width: 100%;
+    bottom: 3.8rem;
+    // height: $place-order-page-summary-height;
+    // width: calc(100% - 1rem);
+    // margin-left: 0.5rem;
+    .summary-card {
+        position: relative;
+        background-color: white;
+        p {
+            font-size: 14px;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+}

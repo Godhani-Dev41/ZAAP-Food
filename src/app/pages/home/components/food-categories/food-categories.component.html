@@ -1,0 +1,10 @@
+<div class="food-categories d-flex w-100">
+  <div class="category position-relative mr-3" *ngFor="let category of (categories$ | async)"
+    (click)="navigateToProcudtByCategoryZone(category?.zoneCode)">
+    <img class="category-image rounded" [src]="category?.zoneImage">
+    <div class="image-shadow position-absolute rounded"></div>
+    <div class="category-name-block d-flex justify-content-center w-100 position-absolute">
+      <span class="category-name text-light"> {{ category?.zoneName }} </span>
+    </div>
+  </div>
+</div>

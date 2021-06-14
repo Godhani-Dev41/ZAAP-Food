@@ -1,0 +1,17 @@
+@import '~roboto-fontface/css/roboto/roboto-fontface.css';
+@import './app/scss/variable.scss';
+
+/* Bootstrap overrides */
+@import './app/scss/bootstrap/navbar/navbar.scss';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto' !important;
+}
+
+/* Bootstrap overrides */
+.progress-bar {
+  background-color: $yellow-color !important;
+}

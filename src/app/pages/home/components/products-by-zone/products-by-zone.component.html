@@ -1,0 +1,20 @@
+<div>
+  <div class="header-block">
+    <div class="header d-flex align-items-center justify-content-center pt-2">
+      <i class="fa fa-arrow-left position-absolute" (click)="navigateToBack()"></i>
+      <input type="email" (keyup)="searchProduct($event)" class="px-4 py-3 form-control search-input border"
+        id="additions" placeholder="&#xF002; Search">
+    </div>
+    <div class="pt-3 pb-1 text-center">
+      <span class="zone-name"> {{ zoneName }} </span>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="food-items row py-2">
+      <div class="col-sm-6 px-2 py-2" *ngFor="let item of productsByZone$ | async">
+        <app-food-item [item]="item"></app-food-item>
+      </div>
+    </div>
+  </div>
+</div>

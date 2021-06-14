@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ZYC-Food",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

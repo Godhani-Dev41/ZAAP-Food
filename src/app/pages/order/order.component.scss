@@ -1,0 +1,65 @@
+@import "../../scss/variable.scss";
+
+.order {
+  .top-legend {
+    font-size: 15px;
+  }
+
+  .order-header-wrapper {
+    background-color: white;
+    z-index: 100;
+    height: $order-header-height;
+  }
+  .rounded-icon {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .ordered {
+    background-color: $dark-gray;
+  }
+  .kitchen {
+    background-color: $dark-orange;
+  }
+  .served {
+    background-color: $light-green;
+  }
+  .cancelled {
+    background-color: $danger-red;
+  }
+  .order-in-progress {
+    overflow: hidden;
+    .image-wrapper {
+      .order-image {
+        height: 75px;
+        width: 75px;
+        border: 2px solid $dark-gray;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .card-wrapper {
+    padding: 20px;
+    font-size: 12px;
+    background-color: $light-orange;
+    .cart-details {
+      min-height: 75px;
+      border-left: 8px solid grey !important;
+
+      div {
+        font-size: 13px;
+      }
+
+      .order-key {
+        font-size: 15px !important;
+      }
+
+      .ordered-status {
+        color: $dark-gray;
+      }
+    }
+  }
+}

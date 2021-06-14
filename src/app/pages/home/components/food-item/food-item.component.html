@@ -1,0 +1,12 @@
+<div class="food-item w-100 bg-white shadow" (click)="openFoodItemDetail()">
+  <div class="item-image-block w-100">
+    <img class="item-image w-100" [src]="item?.itemImage">
+  </div>
+  <div class="item-details-block p-3">
+    <div class="item-name"> {{ item?.itemName }} </div>
+    <div class="item-detail d-flex justify-content-between">
+      <span>Calories: {{ item?.calories }} </span>
+      <span>Price: $ {{ item?.itemPrice }} </span>
+    </div>
+  </div>
+</div>

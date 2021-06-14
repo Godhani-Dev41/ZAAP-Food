@@ -1,0 +1,31 @@
+@import '../../scss/variable.scss';
+
+.nav-bar {
+  height: $top-navbar-height;
+  background-color: $yellow-color;
+
+  .back-icon {
+    font-size: 26px;
+    font-weight: 600;
+    left: 0;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .bar-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    // color: black;
+  }
+}
+.service-card {
+  background-color: $yellow-color;
+  height: 40px;
+  h6 {
+    margin: 0 !important;
+  }
+  .service-icon {
+    right: 0;
+    font-size: 20px;
+  }
+}

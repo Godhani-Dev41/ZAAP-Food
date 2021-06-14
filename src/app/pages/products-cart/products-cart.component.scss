@@ -1,0 +1,90 @@
+@import "../../scss/variable.scss";
+
+.title-header {
+  z-index: 100;
+}
+.empty-cart {
+  .cart-image {
+    width: 6rem;
+    height: 6rem;
+    padding-top: $top-navbar-height;
+  }
+
+  .message {
+    color: $dark-indigo;
+  }
+}
+
+.products-cart {
+  background-color: $light-orange;
+  padding-top: $top-navbar-height;
+
+  .table-number,
+  .date-time {
+    font-size: 15px;
+  }
+
+  .products {
+    .product {
+      .product-image {
+        width: 22vw;
+        object-fit: cover;
+      }
+
+      .product-detail {
+        .close-icon {
+          font-size: 22px;
+          top: 0.5rem;
+          right: 0.5rem;
+          cursor: pointer;
+        }
+
+        .product-name {
+          color: $dark-indigo;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1;
+        }
+
+        .about-text {
+          font-size: 12px;
+          color: $dark-gray;
+          padding-top: 1px;
+        }
+
+        .product-badges {
+          .product-price {
+            background-color: $dark-sky;
+            color: #fff;
+          }
+
+          .badge-pill {
+            font-size: 11px;
+            cursor: pointer;
+            background-color: $yellow-color;
+          }
+        }
+
+        .additions-input {
+          font-size: 14px;
+
+          &:focus {
+            border-color: $dark-sky !important;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-buttons {
+    bottom: 0rem;
+    left: 0;
+    background-color: white;
+    span {
+      background-color: $yellow-color;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+}

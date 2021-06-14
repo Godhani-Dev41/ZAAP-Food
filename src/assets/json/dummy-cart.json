@@ -1,0 +1,431 @@
+{
+    "dummyCart": [
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "aboutExtra": "Extra plate",
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        },
+        {
+            "acceptStatus": 4,
+            "deliveredAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "userID": "6Hs37flah2DFinnuyYTA",
+            "itemName": "Chocolate Muffin",
+            "key": "02O1tkpL0puCvxlDjBiT",
+            "createdAt": {
+                "seconds": 1615273520,
+                "nanoseconds": 0
+            },
+            "tableNumber": "4",
+            "billNumber": "T004ZYC123520201",
+            "itemImage": "https://firebasestorage.googleapis.com/v0/b/guestin-fee8a.appspot.com/o/menuItem%2FuG4o9hvrrhlFqVltSJiT.jpg?alt=media&token=e7918fdb-69d1-4519-9d0a-a5133fc4a72a",
+            "itemID": "BUVFr14boSxFcA04nSUv",
+            "quantity": 2,
+            "taxGST": 10,
+            "remarkWaiter": "Cancelled after guest confirmation.",
+            "updatedAt": {
+                "seconds": 1615288262,
+                "nanoseconds": 0
+            },
+            "ingredient" :[
+                {
+                    "extraPrice": 0.2,
+                    "extraName": "Tomato Sauce",
+                    "include": true
+                },
+                {
+                    "extraName": "Tartar Sauce",
+                    "extraPrice": 1,
+                    "include": true
+                }
+            ],
+            "cycleStatus": 0,
+            "invoiceId": "s09da2naOKJ3quNOHslz",
+            "acceptedBy": "",
+            "itemPrice": 7,
+            "zoneCode": "SWEETS",
+            "status": 3
+        }
+    ]
+}

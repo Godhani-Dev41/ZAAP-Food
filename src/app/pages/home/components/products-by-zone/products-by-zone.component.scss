@@ -1,0 +1,34 @@
+@import "../../../../scss/variable.scss";
+
+.search-input {
+    width: 70%;
+    font-size: 18px;
+    border-radius: 10rem;
+    font-family: Roboto, FontAwesome;
+    outline: none;
+
+    &:focus {
+        border-color: $dark-sky !important;
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        color: #adb5bd;
+    }
+}
+
+.zone-name {
+    font-size: 24px;
+    color: $dark-indigo;
+    font-weight: bold;
+}
+
+.fa-arrow-left {
+    font-size: 30px;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.food-items {
+    background: $light-gray;
+}

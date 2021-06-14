@@ -1,0 +1,133 @@
+@import "../../../../scss/variable.scss";
+
+.fa-arrow-left {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.item-detail-block {
+  .item-image-block {
+    .item-image {
+      height: 65vw;
+      object-fit: cover;
+    }
+  }
+
+  .item-detail-block {
+    .item-name {
+      font-size: 24px;
+      font-weight: 500;
+      color: $dark-indigo;
+    }
+
+    .info {
+      i {
+        font-size: 26px;
+      }
+    }
+
+    .item-detail {
+      font-size: 16px;
+
+      .calories {
+        color: $dark-gray;
+      }
+
+      .price {
+        color: $dark-indigo;
+      }
+    }
+
+    .item-description-block {
+      .label {
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-indigo;
+      }
+
+      .item-description {
+        font-size: 16px;
+        color: $dark-gray;
+      }
+    }
+
+    .item-count-badges {
+      .fa {
+        color: #fff;
+      }
+      .badge-pill {
+        border-radius: 0.7rem;
+        background-color: $yellow-color;
+        cursor: pointer;
+      }
+    }
+
+    .total-price {
+      color: $dark-sky;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .additions-input-block {
+      .long-label {
+        font-size: 16px;
+      }
+      .plus-icon {
+        // color: $dark-indigo;
+      }
+
+      .additions-input {
+        font-size: 16px;
+
+        &:focus {
+          border-color: $dark-sky !important;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .plate-order {
+      right: 1rem;
+      bottom: 4.5rem;
+      span {
+        background-color: $yellow-color;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      i {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.modal-header {
+  .close-icon {
+    font-size: 50px;
+    color: $yellow-color;
+    left: 0;
+  }
+  .modal-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.modal-body,
+.modal-title {
+  color: $dark-indigo;
+}
+
+::ng-deep {
+  .modal-lg {
+    height: 100%;
+    margin: 0;
+    padding-top: 1rem;
+
+    .modal-content {
+      height: 100%;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../scss/variable.scss";
+
+.nav-bar {
+    height: $top-navbar-height;
+    background-color: $yellow-color;
+
+    .back-icon {
+        font-size: 30px;
+        font-weight: 600;
+        left: 0;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    .bar-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+}

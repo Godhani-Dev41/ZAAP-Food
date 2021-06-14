@@ -1,0 +1,32 @@
+@import "../../../../scss/variable.scss";
+
+.food-item {
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px -6px;
+  .item-image-block {
+    .item-image {
+      height: 45vw;
+      max-height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+  }
+
+  .item-details-block {
+    .item-name {
+      font-size: 18px;
+      color: $dark-indigo;
+    }
+
+    .item-detail {
+      font-size: 14px;
+      color: $dark-gray;
+    }
+  }
+}
+
+.item-detail {
+  top: 0;
+  background-color: white;
+}

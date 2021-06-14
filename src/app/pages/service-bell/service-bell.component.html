@@ -1,0 +1,33 @@
+<div>
+  <div class="card py-2">
+    <div
+      class="nav-bar shadow-sm d-flex justify-content-center align-items-center"
+    >
+      <i
+        class="fa back-icon fa-bell position-absolute pl-4"
+        aria-hidden="true"
+      ></i>
+      <span class="bar-title"> {{ title }} </span>
+    </div>
+  </div>
+
+  <div
+    class="
+      d-flex
+      justify-content-center
+      align-items-center
+      service-card
+      p-2
+      m-2
+      rounded
+    "
+    *ngFor="let service of services"
+  >
+    <h6>
+      {{ service.title }}
+    </h6>
+    <i
+      [classList]="[service.icon + ' service-icon position-absolute pr-4']"
+    ></i>
+  </div>
+</div>

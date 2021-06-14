@@ -1,0 +1,85 @@
+<div class="">
+    <div class="position-fixed w-100 top-0 fixed-header">
+        <app-top-nav-bar [title]="'Your Tray On - Table: 14'"></app-top-nav-bar>
+
+        <div class="card border-0">
+            <div class="card shadow-sm px-2 py-1 header-card mx-2">
+                <div class="row">
+                    <div class="col">
+                        <div>Ordered</div>
+                    </div>
+                    <div class="col">
+                        <div>In Kitchen</div>
+                    </div>
+                    <div class="col">
+                        <div>Served</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa fa-check-circle header-icon circle-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fa fa-cutlery header-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fa fa-bell header-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row progress-bar-wrapper">
+            <div class="col-8 m-auto">
+                <div class="progress">
+                    <progressbar [value]="value" class="progress-bar-custom" [striped]="true" [animate]="true">
+                        <i>{{value}} /
+                            {{max}}</i>
+                    </progressbar>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-details px-2 pb-2">
+        Order Details
+
+        <div class="card-wrapper rounded">
+            <div *ngFor="let order of orders" class="card border-0 mt-2 px-2 py-1 cart-details">
+                <div class="d-flex justify-content-between">
+                    <div class="font-weight-bold">
+                        {{order.key}}
+                    </div>
+                    <div class="font-weight-bold">
+                        {{order.createdAt.seconds | date:'shortTime'}}
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        {{order.itemName}} (x{{order.quantity}}) ${{order.itemPrice}}
+                    </div>
+                    <div class="font-weight-bold">
+                        ${{order.itemPrice * order.quantity}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="position-fixed card  border-0 rounded px-2 summary">
+        <div class="container-fluid shadow summary-card py-2 rounded">
+            <div class="d-flex justify-content-between">
+                <p>Food Items: </p>
+                <p class="font-weight-bold">7</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p>Total Item(s) Ordered: </p>
+                <p class="font-weight-bold">17</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p>Sub Total Amount: </p>
+                <p class="font-weight-bold">$170</p>
+            </div>
+        </div>
+    </div>
+</div>

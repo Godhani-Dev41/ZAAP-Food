@@ -1,0 +1,60 @@
+@import "../../../../scss/variable.scss";
+
+.header-block {
+    .search-input {
+        width: 70%;
+        font-size: 18px;
+        border-radius: 10rem;
+        font-family: Roboto, FontAwesome;
+        outline: none;
+
+        &:focus {
+            border-color: $dark-sky !important;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: #adb5bd;
+        }
+    }
+
+    .fa-arrow-left {
+        font-size: 30px;
+        left: 1rem;
+        cursor: pointer;
+    }
+
+    .zone-name {
+        font-size: 24px;
+        color: $dark-indigo;
+        font-weight: bold;
+    }
+}
+
+.categories {
+    .category {
+        .category-image {
+            object-fit: cover;
+        }
+
+        .image-shadow {
+            width: calc(100% - 30px);
+            top: 0;
+            left: 15;
+            background-color: #000;
+            opacity: 0.4;
+        }
+
+        .category-name-block {
+            width: calc(100% - 30px);
+            left: 15;
+            bottom: 6px;
+            height: 19px;
+
+            .category-name {
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+}

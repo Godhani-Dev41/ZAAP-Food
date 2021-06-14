@@ -1,0 +1,10 @@
+app-bottom-nav-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.routed-component {
+  max-height: calc(100% - 54.4px);
+  overflow-y: auto;
+}

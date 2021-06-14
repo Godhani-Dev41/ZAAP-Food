@@ -1,0 +1,82 @@
+<div class="position-relative">
+  <i class="fa fa-arrow-left pl-3 pt-2 position-absolute" (click)="navigateToBack()"></i>
+</div>
+<div class="item-detail-block pb-5">
+  <div class="item-image-block">
+    <img class="item-image w-100" [src]="itemDetail?.itemImage">
+  </div>
+  <div class="item-detail-block px-3">
+    <div class="info pt-3">
+      <i class="fa fa-list-ul" aria-hidden="true" (click)="openModal(template)"></i>
+    </div>
+    <div class="pt-3 pb-3">
+      <div class="item-name"> {{ itemDetail?.itemName }} </div>
+      <div class="item-detail d-flex justify-content-between">
+        <span class="calories">Calories: {{ itemDetail?.calories }} </span>
+        <span class="price">Price: $ {{ itemDetail?.itemPrice }} </span>
+      </div>
+    </div>
+    <div class="item-description-block">
+      <div class="label text-uppercase pb-2">Description</div>
+      <div class="item-description"> {{ itemDetail?.shortDescription }} </div>
+      <div class="item-badges pt-3 d-flex align-items-center justify-content-between">
+        <div class="item-count-badges d-flex align-items-center">
+          <span class="px-3 py-1 badge badge-pill badge-warning" (click)="changeItemCount(false)">
+            <i class="fa fa-minus cursor-pointer"></i>
+          </span>
+          <span class="count px-3">{{ itemCount }}</span>
+          <span class="px-3 py-1 badge badge-pill badge-warning" (click)="changeItemCount(true)">
+            <i class="fa fa-plus cursor-pointer"></i>
+          </span>
+        </div>
+        <span class="total-price">$ {{ itemDetail?.itemPrice * itemCount }} </span>
+      </div>
+    </div>
+    <div class="additions-input-block pt-4">
+      <div class="form-group">
+        <div class="labels d-flex flex-column">
+          <h6 for="additions mb-3">Additions</h6>
+          <div class="additions-wrapper" *ngIf="itemDetail && itemDetail.ingredient && itemDetail.ingredient.length">
+            <div class="addition" *ngFor="let addition of itemDetail.ingredient; let i=index">
+              <ng-container *ngIf="addition?.extraName">
+                <div class="d-flex justify-content-between">
+                  <div>{{addition?.extraName}} <small class="text-muted">${{addition?.extraPrice}}</small></div>
+                  <div *ngIf="!addition?.include" (click)="onClickAddExtraIcon(itemDetail,addition,i)">
+                    <i class="fa fa-plus plus-icon"></i>
+                  </div>
+                  <div *ngIf="addition?.include" (click)="onClickAddExtraIcon(itemDetail,addition,i)">
+                    <i class="fa fa-check plus-icon"></i>
+                  </div>
+                </div>
+                <hr />
+              </ng-container>
+            </div>
+          </div>
+
+          <label class="long-label" for="additions">Any Special Request below:</label>
+        </div>
+        <input *ngIf="itemDetail" type="text" [(ngModel)]="itemDetail.specialRequest"
+          class="px-0 form-control additions-input border-top-0 border-right-0 border-left-0 border-bottom"
+          id="additions" placeholder="Add Special Request (if any)">
+      </div>
+    </div>
+    <div class="plate-order bg-transparent position-fixed">
+      <span class="px-3 py-2 badge badge-pill float-right shadow-sm" (click)="addProductToCart()">
+        <i class="fa fa-plus pr-1"></i>
+        <span>To Plate ( ${{ itemPrice }} ) </span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #template>
+  <div class="modal-header border-0 d-flex justify-content-center align-items-center">
+    <span class="close-icon position-absolute pl-3 cursor-pointer" aria-hidden="true"
+      (click)="closeModal()">&times;</span>
+    <span class="modal-title d-flex text-center">More Info</span>
+  </div>
+  <div class="modal-body text-center">
+    <span>{{ itemDetail?.aboutDish }}</span>
+  </div>
+</ng-template>
